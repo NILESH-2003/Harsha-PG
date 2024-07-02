@@ -1,0 +1,82 @@
+* {box-sizing: border-box}
+        /* Ensure the body takes up the full height */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        /* Main content should take up all available space */
+        .content {
+            flex: 1;
+            margin: 20px; /* Added margin */
+            padding: 20px; /* Added padding */
+        }
+        /* Header styling */
+        .navbar {
+            background-color: #494a4b;
+        }
+        .navbar .navbar-brand,
+        .navbar .nav-link {
+            color: #e99696;
+            transition: color 0.3s; /* Transition for text color */
+        }
+        .navbar .nav-link:hover,
+        .navbar .navbar-brand:hover {
+            color: #9a9a94; /* Hover color */
+        }
+        /* Adjust image in the navbar */
+        .navbar-brand img {
+            max-height: 40px; /* Adjust the height as needed */
+            margin-right: 10px; /* Space between image and text */
+            padding: 5px; /* Padding around the image */
+        }
+        /* Dropdown menu transition */
+        .dropdown-menu {
+            transition: all 0.3s ease-in-out; /* Smooth transition for dropdown */
+        }
+        .dropdown-menu a {
+            color: #000000; /* Dropdown link color */
+        }
+        .dropdown-menu a:hover {
+            background-color: #b1b1a9; /* Dropdown hover background */
+        }
+
+        /* Footer styling */
+        .text-muted {
+            color: #666; /* Text color */
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 0 5px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2); /* Increase size on hover */
+        }
+
+        /* Sticky Footer */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #d8acf8;
+            text-align: center;
+            padding: 10px 0;
+            color: #666;
+        }
+
+        /* Light mode */
+        body.light-mode {
+            background: white;
+            color: black;
+            transition: background 0.5s, color 0.5s;
+        }
+
+        /* Dark mode */
+        body.dark-mode {
+            background: black;
+            color: white;
+            transition: background 0.5s, color 0.5s;
+        }

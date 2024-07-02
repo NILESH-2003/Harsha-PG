@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Kalam&family=Kurale&display=swap&family=Playfair+Display&display=swap");
+
+/* Light mode */
+body.light-mode {
+  background: white;
+  color: black;
+  transition: background 2s, color 2s;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background: rgb(26, 91, 245);
+  color: rgb(255, 255, 255);
+  transition: background 2s, color 2s;
+}
+
+ 
+.carousel {
+  width: 80%; /* Adjust width as needed */
+  height: 400px; /* Adjust height as needed */
+  margin: 0 auto; /* Center the carousel */
+}
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it's above other content */
+  background-color: #d8acf8;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for showing/hiding */
+  transform: translateY(100%);
+}
+
+.footer.visible {
+  transform: translateY(0); /* Show footer */
+}
+
