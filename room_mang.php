@@ -1,4 +1,5 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+<!-- 
     <div class="row">
         <ol class="breadcrumb">
             <li><a href="#">
@@ -6,19 +7,27 @@
                 </a></li>
             <li class="active">Manage Rooms</li>
         </ol>
-    </div><!--/.row-->
+    </div> -->
+    
+  
 
-    <br>
+    <div class="row"  style="background-color:skyblue;" >
+			<div class="col-lg-12" style="background-color:skyblue;">
+			<h3 class="page-header" style="font-weight: 700;text-align:center;font-size:30px;color:#330000">Manage Rooms</h3>
 
-    <div class="row">
-        <div class="col-lg-12">
+			</div>
+		</div>
+    
+
+    <div class="row" style="background-color:skyblue;" >
+        <div class="col-lg-12" style="background-color:skyblue;" >
             <div id="success"></div>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="panel panel-default">
+    <div class="row" style="background-color:skyblue;" >
+        <div class="col-lg-12" style="background-color:skyblue;" >
+            <div class="panel panel-default" >
                 <div class="panel-heading">Manage Rooms
                     <button class="btn btn-secondary pull-right" style="border-radius:0%" data-toggle="modal" data-target="#addRoom">Add Rooms</button>
                 </div>
@@ -42,8 +51,8 @@
                             <th>Room No</th>
                             <th>Room Type</th>
                             <th>Booking Status</th>
-                            <th>Check In</th>
-                            <th>Check Out</th>
+                            <!-- <th>Check In</th>
+                            <th>Check Out</th> -->
                             <th>Action</th>
                         </tr>
                         </thead>
@@ -66,27 +75,27 @@
                                         ?>
 
 
-                                    <td>
+                                    <!-- <td>
                                         <?php
-                                        if ($rooms['status'] == 1 && $rooms['check_in_status'] == 0) {
-                                            echo '<button class="btn btn-warning" id="checkInRoom"  data-id="' . $rooms['room_id'] . '" data-toggle="modal" style="border-radius:0%" data-target="#checkIn">Check In</button>';
-                                        } elseif ($rooms['status'] == 0) {
-                                            echo '-';
-                                        } else {
+                                        // if ($rooms['status'] == 1 && $rooms['check_in_status'] == 0) {
+                                        //     echo '<button class="btn btn-warning" id="checkInRoom"  data-id="' . $rooms['room_id'] . '" data-toggle="modal" style="border-radius:0%" data-target="#checkIn">Check In</button>';
+                                        // } elseif ($rooms['status'] == 0) {
+                                        //     echo '-';
+                                        // } else {
 
-                                            echo '<a href="#" class="btn btn-danger" style="border-radius:0%">Checked In</a>';
-                                        }
+                                        //     echo '<a href="#" class="btn btn-danger" style="border-radius:0%">Checked In</a>';
+                                        // }
                                         ?>
-                                    </td>
-                                    <td>
-                                        <?php
-                                        if ($rooms['status'] == 1 && $rooms['check_in_status'] == 1) {
-                                            echo '<button class="btn btn-primary" style="border-radius:0%" id="checkOutRoom" data-id="' . $rooms['room_id'] . '">Check Out</button>';
-                                        } elseif ($rooms['status'] == 0) {
-                                            echo '-';
-                                        }
-                                        ?>
-                                    </td>
+                                    </td> -->
+                                    <!-- <td>
+                                        <!-- <?php
+                                        // if ($rooms['status'] == 1 && $rooms['check_in_status'] == 1) {
+                                        //     echo '<button class="btn btn-primary" style="border-radius:0%" id="checkOutRoom" data-id="' . $rooms['room_id'] . '">Check Out</button>';
+                                        // } elseif ($rooms['status'] == 0) {
+                                        //     echo '-';
+                                        // }
+                                        ?> -->
+                                    </td> -->
                                     <td>
 
                                         <button title="Edit Room Information" style="border-radius:60px;" data-toggle="modal"
@@ -215,7 +224,6 @@
     </div>
 
 
-    <!---customer details-->
     <div id="cutomerDetailsModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
@@ -228,12 +236,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <table class="table table-responsive table-bordered">
-                                <!-- <thead>
-                                <tr>
-                                    <th>Title</th>
-                                    <th>Detail</th>
-                                </tr>
-                                </thead> -->
+                               
                                 <tbody>
                                 <tr>
                                     <td><b>Customer Name</b></td>
@@ -400,13 +403,12 @@
     </div>
 
 
-    <div class="row">
+    <div class="row" style="background-color:skyblue;" >
         <div class="col-sm-12">
-        <p class="back-link">Developed By Madhav,Nilesh & Sunil</p>
+        <p class="back-link" style="color:white;font-size:18px" >Developed By Madhav, Nilesh & Sunil</p>
         </div>
     </div>
 
-</div>    <!--/.main-->
-
+</div>    
 
 

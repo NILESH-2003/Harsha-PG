@@ -36,7 +36,7 @@
                         <thead>
                         <tr>
                             <th>Sr. No</th>
-                            <th>Shift</th>
+                            <!-- <th>Shift</th> -->
                             <th>From Date</th>
                             <th>To Date</th>
                         </tr>
@@ -55,7 +55,7 @@
                                 ?>
                                 <tr>
                                     <td><?php echo $num; ?></td>
-                                    <td><?php echo $staff['shift'].' - '.$staff['shift_timing']; ?></td>
+                                    <!-- <td><?php echo $staff['shift'].' - '.$staff['shift_timing']; ?></td> -->
                                     <td><?php echo date('M j, Y', strtotime($staff['from_date'])); ?></td>
                                     <td>
                                         <?php
@@ -85,7 +85,7 @@
 
     <div class="row">
         <div class="col-sm-12">
-        <p class="back-link">Developed By Madhav,Nilesh & Sunil</p>
+        <p class="back-link" style="color:white;font-size:18px">Developed By Madhav, Nilesh & Sunil</p>
         </div>
     </div>
 

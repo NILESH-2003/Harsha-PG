@@ -95,13 +95,13 @@ include_once "sidebar.php";
           [ new Date(2020, 3, 15), 2   ],
           [ new Date(2020, 3, 16), 3   ],
           [ new Date(2020, 3, 17), 3   ],
-           //
+           
           [ new Date(2020, 4, 13), 5   ],
           [ new Date(2020, 4, 14), 9 ],
           [ new Date(2020, 4, 15), 5 ],
           [ new Date(2020, 4, 16), 6 ],
           [ new Date(2020, 4, 17), 2 ],
-          // Many rows omitted for brevity.
+         
           [ new Date(2020, 9, 4), 3 ],
           [ new Date(2020, 9, 5), 5],
           [ new Date(2020, 9, 12), 6],
@@ -123,10 +123,20 @@ include_once "sidebar.php";
    }
 </script>
   </head>
-  <body>
+  <body style="background-color:skyblue" >
+  <div class="row"  style="background-color:skyblue;" >
+			<div class="col-lg-12" style="background-color:skyblue;">
+			<h3 class="page-header" style="font-weight: 700;text-align:center;font-size:30px;color:#330000">Statistics</h3>
+
+			</div>
+		</div>
     <div id="piechart_3d"></div>
     <div id="barchart_values"></div><br><br><br>
-    
+    <div  style="background-color:skyblue;" >
+        
+        <p class="back-link" style="color:white;font-size:18px" >Developed By Madhav, Nilesh & Sunil</p>
+       
+    </div>
   </body>
 </html>
 <?php

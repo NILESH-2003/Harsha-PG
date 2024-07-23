@@ -1,17 +1,22 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
-    <div class="row">
+    <!-- <div class="row">
         <ol class="breadcrumb">
             <li><a href="#">
                     <em class="fa fa-home"></em>
                 </a></li>
             <li class="active">Complaint</li>
         </ol>
-    </div><!--/.row-->
+    </div>/.row -->
+    <div class="row"  style="background-color:skyblue;" >
+			<div class="col-lg-12" style="background-color:skyblue;">
+			<h3 class="page-header" style="font-weight: 700;text-align:center;font-size:30px;color:#330000">Complaints</h3>
 
+			</div>
+		</div>
     
 
-    <div class="row">
-        <div class="col-lg-12">
+    <div class="row" style="background-color:skyblue;">
+        <div class="col-lg-12" style="background-color:skyblue;">
             <div class="panel panel-default">
                 <div class="panel-heading">Make Complaint</div>
                 <div class="panel-body">
@@ -56,8 +61,8 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-lg-12">
+    <div class="row" style="background-color:skyblue;">
+        <div class="col-lg-12" style="background-color:skyblue;">
             <div class="panel panel-default">
                 <div class="panel-heading">Complaint Management</div>
                 <div class="panel-body">
@@ -156,9 +161,9 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row" style="background-color:skyblue;">
         <div class="col-sm-12">
-        <p class="back-link">Developed By Madhav,Nilesh & Sunil</p>
+        <p class="back-link"  style="color:white;font-size:18px">Developed By Madhav, Nilesh & Sunil</p>
         </div>
     </div>
 

@@ -145,7 +145,7 @@ select.form-control {
 }
 
 .navbar-header .navbar-brand span {
-  color: #ffc930;
+  color: #09e310;
 }
 
 .navbar-toggle {
@@ -564,7 +564,7 @@ a.label:focus {
 
 .label-primary[href]:hover,
 .label-primary[href]:focus {
-  background-color: #e9ecf2;
+  background-color: #e6eaf2;
 }
 
 .label-success {

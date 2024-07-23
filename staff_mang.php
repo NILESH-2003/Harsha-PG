@@ -1,17 +1,24 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
-    <div class="row">
+    <!-- <div class="row">
         <ol class="breadcrumb">
             <li><a href="#">
                     <em class="fa fa-home"></em>
                 </a></li>
             <li class="active">Manage Staffs</li>
         </ol>
-    </div><!--/.row-->
+    </div>
+     -->
+    <div class="row"  style="background-color:skyblue;" >
+			<div class="col-lg-12" style="background-color:skyblue;">
+			<h3 class="page-header" style="font-weight: 700;text-align:center;font-size:30px;color:#330000">Manage Staffs</h3>
+
+			</div>
+		</div>
 
    
 
-    <div class="row">
-        <div class="col-lg-12">
+    <div class="row" style="background-color:skyblue;" >
+        <div class="col-lg-12" style="background-color:skyblue;" >
             <div class="panel panel-default">
                 <div class="panel-heading">Employee Details:
                     <a href="index.php?add_emp" class="btn btn-secondary pull-right" style="border-radius:0%">Add Employee</a>
@@ -36,10 +43,10 @@
                             <th>Sr. No</th>
                             <th>Employee Name</th>
                             <th>Staff</th>
-                            <th>Shift</th>
+                            <!-- <th>Shift</th> -->
                             <th>Joining Date</th>
                             <th>Salary</th>
-                            <th>Change Shift</th>
+                            <!-- <th>Change Shift</th> -->
                             <th>Action</th>
                         </tr>
                         </thead>
@@ -56,13 +63,13 @@
                                     <td><?php echo $staff['emp_id']; ?></td>
                                     <td><?php echo $staff['emp_name']; ?></td>
                                     <td><?php echo $staff['staff_type']; ?></td>
-                                    <td><?php echo $staff['shift'] . ' - ' . $staff['shift_timing']; ?></td>
+                                    <!-- <td><?php echo $staff['shift'] . ' - ' . $staff['shift_timing']; ?></td> -->
                                     <td><?php echo date('M j, Y', strtotime($staff['joining_date'])); ?></td>
                                     <td><?php echo $staff['salary']; ?></td>
-                                    <td>
+                                    <!-- <td>
                                         <button class="btn btn-warning" style="border-radius:0%" data-toggle="modal" data-target="#changeShift"
                                                 data-id="<?php echo $staff['emp_id']; ?>" id="change_shift">Change Shift</button>
-                                    </td>
+                                    </td> -->
                                     <td>
 
                                         <button data-toggle="modal"
@@ -91,9 +98,9 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row" style="background-color:skyblue;" >
         <div class="col-sm-12">
-        <p class="back-link">Developed By Madhav,Nilesh & Sunil</p>
+        <p class="back-link" style="color:white;font-size:18px">Developed By Madhav, Nilesh & Sunil</p>
         </div>
     </div>
 

@@ -12,33 +12,28 @@ if (isset($_GET['room_id'])){
 }
 
 ?>
-<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
-    <div class="row">
-        <ol class="breadcrumb">
-            <li><a href="#">
-                    <em class="fa fa-home"></em>
-                </a></li>
-            <li class="active">Reservation</li>
-        </ol>
-    </div><!--/.row-->
+<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main"  style="background-color:skyblue;">
 
-    <!-- <div class="row">
-        <div class="col-lg-12">
-            <h1 class="page-header">Reservation</h1>
-        </div>
-    </div>/.row -->
 
+  
+
+    <div class="row"  style="background-color:skyblue;" >
+			<div class="col-lg-12" style="background-color:skyblue;">
+			<h3 class="page-header" style="font-weight: 700;text-align:center;font-size:30px;color:#330000">Reservation</h3>
+
+			</div>
+		</div>
     
 
-    <div class="row">
-        <div class="col-lg-12">
+    <div class="row" style="background-color:skyblue;">
+        <div class="col-lg-12" >
             <form role="form" id="booking" data-toggle="validator">
                 <div class="response"></div>
                 <div class="col-lg-12">
                     <?php
                     if (isset($_GET['room_id'])){?>
 
-                        <div class="panel panel-default">
+                        <div class="panel panel-default" >
                             <div class="panel-heading">Room Information:
                                 <a class="btn btn-secondary pull-right" href="index.php?room_mang">Replan Booking</a>
                             </div>
@@ -83,7 +78,7 @@ if (isset($_GET['room_id'])){
                     <?php } else{?>
                         <div class="panel panel-default">
                             <div class="panel-heading">Room Information:
-                                <a class="btn btn-secondary pull-right" style="border-radius:0%" href="index.php?reservation">Replan Booking</a>
+                                <a class="btn btn-secondary pull-right" style="border-radius:0%" href="index.php?reservation">Reset</a>
                             </div>
                             <div class="panel-body">
                                 <div class="form-group col-lg-6">
@@ -136,18 +131,19 @@ if (isset($_GET['room_id'])){
                         <div class="panel-body">
                             <div class="form-group col-lg-6">
                                 <label>First Name</label>
-                                <input class="form-control" placeholder="First Name" id="first_name" data-error="Enter First Name" required>
+                                <input class="form-control" placeholder="First Name" id="first_name" type="text"   pattern="[A-Za-z]+" data-error="Enter First Name" required>
                                 <div class="help-block with-errors"></div>
                             </div>
 
                             <div class="form-group col-lg-6">
                                 <label>Last Name</label>
-                                <input class="form-control" placeholder="Last Name" id="last_name">
+                                <input class="form-control" placeholder="Last Name" id="last_name" type="text"   pattern="[A-Za-z]+" data-error="Enter Last Name" required>
+                                <div class="help-block with-errors"></div>
                             </div>
 
                             <div class="form-group col-lg-6">
                                 <label>Contact Number</label>
-                                <input type="number" class="form-control" data-error="Enter Min 10 Digit" data-minlength="10" placeholder="Contact No" id="contact_no" required>
+                                <input type="number" class="form-control" data-error="Enter Min 10 Digit" data-maxlength="10" placeholder="Contact No" id="contact_no" required>
                                 <div class="help-block with-errors"></div>
                             </div>
 
@@ -178,7 +174,8 @@ if (isset($_GET['room_id'])){
                                 <input type="text" class="form-control" placeholder="ID Card Number" id="id_card_no" data-error="Enter Valid ID Card No" required>
                                 <div class="help-block with-errors"></div>
                             </div>
-
+                        
+                            
                             <div class="form-group col-lg-12">
                                 <label>Residential Address</label>
                                 <input type="text" class="form-control" placeholder="Full Address" id="address" required>
@@ -194,7 +191,7 @@ if (isset($_GET['room_id'])){
 
     <div class="row">
         <div class="col-sm-12">
-            <p class="back-link">Developed By Madhav,Nilesh & Sunil</p>
+            <p class="back-link" style="color:white;font-size:18px">Developed By Madhav, Nilesh & Sunil</p>
         </div>
     </div>
 
@@ -264,5 +261,3 @@ if (isset($_GET['room_id'])){
 
     </div>
 </div>
-
-

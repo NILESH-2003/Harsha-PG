@@ -28,7 +28,7 @@ body.dark-mode {
   left: 0;
   width: 100%;
   z-index: 1000; /* Ensure it's above other content */
-  background-color: #d8acf8;
+  background-color: #9500ff;
   transition: transform 0.3s ease-in-out; /* Smooth transition for showing/hiding */
   transform: translateY(100%);
 }

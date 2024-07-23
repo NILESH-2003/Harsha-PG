@@ -291,7 +291,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `name`, `username`, `email`, `password`, `created_at`) VALUES
-(1, 'nilesh', 'nilesh', 'nilesh@gmail.com', '1234', '2015-11-12 12:49:22');
+(1, 'abhishek', 'abhishek', 'abhishek@gmail.com', '1234', '2015-11-12 12:49:22');
 
 
 --

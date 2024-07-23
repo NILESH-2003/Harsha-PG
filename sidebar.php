@@ -1,20 +1,20 @@
 
-<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
-    <div class="profile-sidebar">
-        <div class="profile-userpic">
+<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar" style="background-color:#e6ffff;" >
+    <div class="profile-sidebar" >
+        <div class="profile-userpic" >
             <img src="img/user.png" class="img-responsive" alt="">
         </div>
-        <div class="profile-usertitle">
-            <div class="profile-usertitle-name"><?php echo $user['name'];?></div>
-            <div class="profile-usertitle-status"><span class="indicator label-success"></span>Manager</div>
+        <div class="profile-usertitle" >
+            <div class="profile-usertitle-name">Purna Palla</div>
+            <div class="profile-usertitle-status" ><span class="indicator label-success"></span>Owner</div>
         </div>
-        <div class="clear"></div>
+        <div class="clear" ></div>
     </div>
-    <div class="divider"></div>
-    <ul class="nav menu">
+    <div class="divider" ></div>
+    <ul class="nav menu" >
     <?php 
         if (isset($_GET['dashboard'])){ ?>
-            <li class="active">
+            <li class="active" >
                 <a href="index.php?dashboard"><em class="fa fa-dashboard">&nbsp;</em>
                     Dashboard
                 </a>
@@ -97,4 +97,4 @@
 
         
     </ul>
-</div><!--/.sidebar-->
+</div>

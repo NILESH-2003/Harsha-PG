@@ -122,7 +122,7 @@
 
     <div class="row">
         <div class="col-sm-12">
-        <p class="back-link">Developed By Madhav,Nilesh & Sunil</p>
+        <p class="back-link">Developed By Madhav, Nilesh & Sunil</p>
         </div>
     </div>
 
